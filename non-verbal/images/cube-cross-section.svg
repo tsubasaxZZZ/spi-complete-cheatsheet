@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f8f8"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">立方体の切断面例</text>
+  
+  <!-- 例1: 対角線切断で六角形 -->
+  <g transform="translate(200, 200)">
+    <!-- 立方体の見える面 -->
+    <polygon points="0,0 80,0 80,80 0,80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <polygon points="80,0 110,-30 110,50 80,80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <polygon points="0,0 30,-30 110,-30 80,0" fill="#fff" stroke="#000" stroke-width="2"/>
+    
+    <!-- 見えない辺（点線） -->
+    <line x1="0" y1="80" x2="30" y2="50" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="30" y1="-30" x2="30" y2="50" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="30" y1="50" x2="110" y2="50" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+    
+    <!-- 切断面（赤色） -->
+    <polygon points="0,0 80,0 110,-30 30,-30" fill="rgba(255,0,0,0.3)" stroke="red" stroke-width="2"/>
+    
+    <text x="50" y="110" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">水平切断 → 長方形</text>
+  </g>
+  
+  <!-- 例2: 斜め切断で菱形 -->
+  <g transform="translate(500, 200)">
+    <!-- 立方体の見える面 -->
+    <polygon points="0,0 80,0 80,80 0,80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <polygon points="80,0 110,-30 110,50 80,80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <polygon points="0,0 30,-30 110,-30 80,0" fill="#fff" stroke="#000" stroke-width="2"/>
+    
+    <!-- 見えない辺（点線） -->
+    <line x1="0" y1="80" x2="30" y2="50" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="30" y1="-30" x2="30" y2="50" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="30" y1="50" x2="110" y2="50" stroke="#000" stroke-width="1" stroke-dasharray="4,2"/>
+    
+    <!-- 切断面（青色） -->
+    <line x1="0" y1="0" x2="110" y2="50" stroke="blue" stroke-width="3"/>
+    <polygon points="0,0 80,80 110,50 30,-30" fill="rgba(0,0,255,0.3)" stroke="blue" stroke-width="2"/>
+    
+    <text x="50" y="110" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">対角線切断 → 四角形</text>
+  </g>
+  
+  <!-- 対角線切断で正六角形の例 -->
+  <g transform="translate(350, 380)">
+    <!-- 正六角形 -->
+    <polygon points="0,0 20,-35 70,-35 90,0 70,35 20,35" fill="rgba(0,128,0,0.3)" stroke="green" stroke-width="2"/>
+    
+    <text x="45" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">特殊な対角線切断 → 正六角形</text>
+    <text x="45" y="80" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">(頂点から対角頂点への切断)</text>
+  </g>
+  
+  <!-- 説明 -->
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    立方体の切断面は、切る方向によって様々な形になります。
+  </text>
+</svg>
