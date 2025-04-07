@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#f8f8f8"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">立方体の展開図と組み立て例</text>
+  
+  <!-- 展開図 -->
+  <g transform="translate(150, 150)">
+    <!-- 中央の面 -->
+    <rect x="0" y="0" width="80" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="40" y="45" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">1</text>
+    
+    <!-- 上の面 -->
+    <rect x="0" y="-80" width="80" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="40" y="-35" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">2</text>
+    
+    <!-- 右の面 -->
+    <rect x="80" y="0" width="80" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">3</text>
+    
+    <!-- 下の面 -->
+    <rect x="0" y="80" width="80" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="40" y="125" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">4</text>
+    
+    <!-- 左の面 -->
+    <rect x="-80" y="0" width="80" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="-40" y="45" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">5</text>
+    
+    <!-- 後ろの面 -->
+    <rect x="160" y="0" width="80" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="200" y="45" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">6</text>
+    
+    <text x="40" y="-100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">展開図</text>
+  </g>
+  
+  <!-- 組み立て後の立方体 (アイソメトリック表示) -->
+  <g transform="translate(550, 150)">
+    <!-- 上面 -->
+    <polygon points="0,0 60,-30 120,0 60,30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="60" y="5" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">2</text>
+    
+    <!-- 右面 -->
+    <polygon points="120,0 120,80 60,110 60,30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="90" y="55" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">3</text>
+    
+    <!-- 左面 -->
+    <polygon points="0,0 0,80 60,110 60,30" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="30" y="55" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">5</text>
+    
+    <text x="60" y="-50" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">組み立て後</text>
+    
+    <!-- 向かい合う面の関係 -->
+    <text x="60" y="150" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">向かい合う面：1と6、2と4、3と5</text>
+  </g>
+  
+  <!-- 説明 -->
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    立方体の展開図では、向かい合う面同士は展開図上で離れた位置にあります。
+  </text>
+  <text x="400" y="350" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    例：面1の向かい側は面6、面2の向かい側は面4、面3の向かい側は面5
+  </text>
+</svg>

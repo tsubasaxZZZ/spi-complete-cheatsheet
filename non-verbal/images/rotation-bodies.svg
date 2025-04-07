@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f8f8"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">回転体の例</text>
+  
+  <!-- 例1: 長方形の回転体（円柱） -->
+  <g transform="translate(200, 150)">
+    <!-- 回転前の図形 -->
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="red" stroke-width="2"/>
+    <rect x="0" y="-60" width="40" height="120" fill="rgba(255,0,0,0.1)" stroke="red" stroke-width="2"/>
+    
+    <!-- 回転後の立体 -->
+    <g transform="translate(120, 0)">
+      <!-- 円柱の上面 -->
+      <ellipse cx="0" cy="-60" rx="40" ry="15" fill="rgba(0,0,255,0.1)" stroke="blue" stroke-width="2"/>
+      <!-- 円柱の下面 -->
+      <ellipse cx="0" cy="60" rx="40" ry="15" fill="rgba(0,0,255,0.1)" stroke="blue" stroke-width="2"/>
+      <!-- 円柱の側面 -->
+      <line x1="-40" y1="-60" x2="-40" y2="60" stroke="blue" stroke-width="2"/>
+      <line x1="40" y1="-60" x2="40" y2="60" stroke="blue" stroke-width="2"/>
+      
+      <!-- 回転軸 -->
+      <line x1="0" y1="-70" x2="0" y2="70" stroke="red" stroke-width="2" stroke-dasharray="5,3"/>
+    </g>
+    
+    <text x="60" y="100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">長方形を一辺で回転</text>
+    <text x="180" y="100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">→ 円柱</text>
+  </g>
+  
+  <!-- 例2: 三角形の回転体（円錐） -->
+  <g transform="translate(500, 150)">
+    <!-- 回転前の図形 -->
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="red" stroke-width="2"/>
+    <polygon points="0,-60 60,60 0,60" fill="rgba(255,0,0,0.1)" stroke="red" stroke-width="2"/>
+    
+    <!-- 回転後の立体 -->
+    <g transform="translate(120, 0)">
+      <!-- 円錐の底面 -->
+      <ellipse cx="0" cy="60" rx="60" ry="20" fill="rgba(0,0,255,0.1)" stroke="blue" stroke-width="2"/>
+      <!-- 円錐の側面 -->
+      <line x1="0" y1="-60" x2="-60" y2="60" stroke="blue" stroke-width="2"/>
+      <line x1="0" y1="-60" x2="60" y2="60" stroke="blue" stroke-width="2"/>
+      
+      <!-- 回転軸 -->
+      <line x1="0" y1="-70" x2="0" y2="70" stroke="red" stroke-width="2" stroke-dasharray="5,3"/>
+    </g>
+    
+    <text x="60" y="100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">三角形を一辺で回転</text>
+    <text x="180" y="100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">→ 円錐</text>
+  </g>
+  
+  <!-- 例3: 半円の回転体（球） -->
+  <g transform="translate(350, 320)">
+    <!-- 回転前の図形 -->
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="red" stroke-width="2"/>
+    <path d="M-60,0 A60,60 0 0,1 60,0" fill="rgba(255,0,0,0.1)" stroke="red" stroke-width="2"/>
+    
+    <!-- 回転後の立体 -->
+    <g transform="translate(0, 80)">
+      <!-- 球 -->
+      <circle cx="0" cy="0" r="60" fill="rgba(0,0,255,0.1)" stroke="blue" stroke-width="2"/>
+      
+      <!-- 回転軸 -->
+      <line x1="-70" y1="0" x2="70" y2="0" stroke="red" stroke-width="2" stroke-dasharray="5,3"/>
+    </g>
+    
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">半円を直径で回転 → 球</text>
+  </g>
+  
+  <!-- 説明 -->
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    平面図形を特定の軸を中心に360°回転させることで様々な立体ができます
+  </text>
+</svg>

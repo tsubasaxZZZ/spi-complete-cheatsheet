@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f8f8"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">論理推論問題の図示例</text>
+  
+  <!-- 1. 真偽推理（嘘つき問題） -->
+  <g transform="translate(200, 150)">
+    <rect x="-150" y="-40" width="300" height="130" rx="10" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">真偽推理（嘘つき問題）</text>
+    
+    <text x="-140" y="10" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">Aさん「Bさんは嘘つき」</text>
+    <text x="-140" y="35" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">Bさん「Cさんは嘘つき」</text>
+    <text x="-140" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">Cさん「Aさんは本当のことを言っている」</text>
+    
+    <!-- 真偽パターンの表 -->
+    <g transform="translate(280, 25)">
+      <rect x="-90" y="-35" width="180" height="80" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <line x1="-90" y1="-15" x2="90" y2="-15" stroke="#333" stroke-width="1"/>
+      <line x1="-30" y1="-35" x2="-30" y2="45" stroke="#333" stroke-width="1"/>
+      <line x1="30" y1="-35" x2="30" y2="45" stroke="#333" stroke-width="1"/>
+      
+      <text x="-60" y="-20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">A</text>
+      <text x="0" y="-20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">B</text>
+      <text x="60" y="-20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">C</text>
+      
+      <text x="-60" y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">真</text>
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">偽</text>
+      <text x="60" y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">真</text>
+      
+      <text x="-60" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">偽</text>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">真</text>
+      <text x="60" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">偽</text>
+    </g>
+  </g>
+  
+  <!-- 2. 順序推理問題 -->
+  <g transform="translate(200, 350)">
+    <rect x="-150" y="-40" width="300" height="150" rx="10" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">順序推理問題</text>
+    
+    <text x="-140" y="10" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・Aさんは3位ではない</text>
+    <text x="-140" y="35" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・BさんはCさんより前</text>
+    <text x="-140" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・DさんはEさんより後ろ</text>
+    <text x="-140" y="85" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・Cさんは最下位ではない</text>
+    
+    <!-- 矢印図 -->
+    <g transform="translate(280, 40)">
+      <circle cx="-80" cy="-20" r="15" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <text x="-80" y="-15" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">B</text>
+      
+      <circle cx="0" cy="-20" r="15" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <text x="0" y="-15" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">C</text>
+      
+      <circle cx="-80" cy="30" r="15" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <text x="-80" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">E</text>
+      
+      <circle cx="0" cy="30" r="15" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">D</text>
+      
+      <circle cx="80" cy="0" r="15" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <text x="80" y="5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">A</text>
+      
+      <!-- 矢印 -->
+      <path d="M-65,-20 L-15,-20" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+      <path d="M-65,30 L-15,30" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+      
+      <text x="0" y="-40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">B→C（BはCより前）</text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">E→D（EはDより前）</text>
+    </g>
+    
+    <!-- マーカー定義 -->
+    <defs>
+      <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+      </marker>
+    </defs>
+  </g>
+
+  <!-- 3. 条件組合せ問題 -->
+  <g transform="translate(600, 150)">
+    <rect x="-150" y="-40" width="300" height="130" rx="10" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">条件組合せ問題</text>
+    
+    <text x="-140" y="10" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・AとBは同じグループに入れない</text>
+    <text x="-140" y="35" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・Cはグループ1に属する</text>
+    <text x="-140" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">・DとEは同じグループに属する</text>
+    
+    <!-- ○×表 -->
+    <g transform="translate(180, 25)">
+      <rect x="-60" y="-35" width="120" height="100" fill="#fff" stroke="#333" stroke-width="1.5"/>
+      <line x1="-60" y1="-15" x2="60" y2="-15" stroke="#333" stroke-width="1"/>
+      <line x1="-20" y1="-35" x2="-20" y2="65" stroke="#333" stroke-width="1"/>
+      
+      <text x="-40" y="-20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">グループ</text>
+      <text x="20" y="-20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">メンバー</text>
+      
+      <text x="-40" y="5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">1</text>
+      <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">A, C</text>
+      
+      <text x="-40" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">2</text>
+      <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">B, D, E</text>
+      
+      <text x="-40" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">3</text>
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">-</text>
+    </g>
+  </g>
+  
+  <!-- 4. 操作手順推論問題 -->
+  <g transform="translate(600, 350)">
+    <rect x="-150" y="-40" width="300" height="130" rx="10" fill="#fff" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="-20" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333">操作手順推論問題</text>
+    
+    <text x="-140" y="5" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">例：3つのコインABCを左右入れ替え</text>
+    <text x="-140" y="30" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">操作1：左2枚を右2枚と入れ替え</text>
+    <text x="-140" y="55" font-family="Arial, sans-serif" font-size="16" text-anchor="start" fill="#333">操作2：真ん中と右を入れ替え</text>
+    
+    <!-- 状態遷移 -->
+    <g transform="translate(180, 25)">
+      <text x="-60" y="-10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">ABC</text>
+      <text x="0" y="-10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">BCA</text>
+      <text x="60" y="-10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">BAC</text>
+      
+      <path d="M-45,-10 L-15,-10" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+      <path d="M15,-10 L45,-10" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+      <path d="M60,5 C60,40 -60,40 -60,5" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+      
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">周期：3回</text>
+    </g>
+  </g>
+  
+  <!-- 説明 -->
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    論理推論問題では、条件を整理して図示することで解きやすくなります
+  </text>
+</svg>
