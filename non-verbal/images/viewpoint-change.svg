@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f8f8"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">視点移動問題の例</text>
+  
+  <!-- 中央の立体（ブロック積み上げ） -->
+  <g transform="translate(400, 200)">
+    <!-- 一番下の層 -->
+    <g>
+      <polygon points="-60,30 0,60 60,30 0,0" fill="#ddd" stroke="#333" stroke-width="1.5"/>
+      <polygon points="-60,30 -60,60 0,90 0,60" fill="#ccc" stroke="#333" stroke-width="1.5"/>
+      <polygon points="0,60 0,90 60,60 60,30" fill="#bbb" stroke="#333" stroke-width="1.5"/>
+    </g>
+    
+    <!-- 2番目の層左 -->
+    <g>
+      <polygon points="-60,0 0,30 0,60 -60,30" fill="#ddd" stroke="#333" stroke-width="1.5"/>
+      <polygon points="-60,0 -60,30 -30,45 -30,15" fill="#ccc" stroke="#333" stroke-width="1.5"/>
+      <polygon points="-30,15 -30,45 0,60 0,30" fill="#bbb" stroke="#333" stroke-width="1.5"/>
+    </g>
+    
+    <!-- 2番目の層右 -->
+    <g>
+      <polygon points="0,30 60,0 60,30 0,60" fill="#ddd" stroke="#333" stroke-width="1.5"/>
+      <polygon points="30,15 30,45 60,30 60,0" fill="#ccc" stroke="#333" stroke-width="1.5"/>
+      <polygon points="0,30 0,60 30,45 30,15" fill="#bbb" stroke="#333" stroke-width="1.5"/>
+    </g>
+    
+    <!-- 最上層（中央） -->
+    <g>
+      <polygon points="-30,-15 0,0 30,-15 0,-30" fill="#ddd" stroke="#333" stroke-width="1.5"/>
+      <polygon points="-30,-15 -30,15 0,30 0,0" fill="#ccc" stroke="#333" stroke-width="1.5"/>
+      <polygon points="0,0 0,30 30,15 30,-15" fill="#bbb" stroke="#333" stroke-width="1.5"/>
+    </g>
+    
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">立体図</text>
+  </g>
+  
+  <!-- 異なる視点からの図 -->
+  <g transform="translate(180, 340)">
+    <!-- 正面図 -->
+    <rect x="-60" y="-40" width="120" height="80" fill="none" stroke="#333" stroke-width="1.5"/>
+    <rect x="-30" y="-80" width="60" height="40" fill="none" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">正面図</text>
+  </g>
+  
+  <g transform="translate(400, 340)">
+    <!-- 側面図 -->
+    <rect x="-60" y="-40" width="120" height="80" fill="none" stroke="#333" stroke-width="1.5"/>
+    <rect x="-30" y="-80" width="60" height="40" fill="none" stroke="#333" stroke-width="1.5"/>
+    <rect x="-60" y="-40" width="60" height="40" fill="none" stroke="#333" stroke-width="1.5"/>
+    <rect x="0" y="-40" width="60" height="40" fill="none" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">側面図</text>
+  </g>
+  
+  <g transform="translate(620, 340)">
+    <!-- 平面図（上からの図） -->
+    <rect x="-60" y="-40" width="120" height="80" fill="none" stroke="#333" stroke-width="1.5"/>
+    <rect x="-30" y="-20" width="60" height="40" fill="none" stroke="#333" stroke-width="1.5"/>
+    
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">平面図（上から）</text>
+  </g>
+  
+  <!-- 視点の矢印 -->
+  <line x1="270" y1="200" x2="320" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="280" x2="400" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="530" y1="200" x2="480" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 矢印のマーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- 説明 -->
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">
+    立体を異なる方向（正面・側面・上面）から見たときの図形を理解する問題
+  </text>
+</svg>
